@@ -13,7 +13,7 @@ const ChipCom = () => {
     const inputValue = e.target.value;
     setInputValue(inputValue);
 
-    // Filter items based on user input, excluding selected chips
+  
     const filteredItems = initialItems.filter(
       (item) =>
         !selectedChips.some((chip) => chip.text.toLowerCase() === item.toLowerCase()) &&
